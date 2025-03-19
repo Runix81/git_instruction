@@ -33,7 +33,16 @@
 3. Три
 ---
 Существует возможность оформлять вложенные списки, для этого используются отступы, например:
-
+```
+- Машины
+    1. __Жигули__
+    2. _Волга_
+    3. ~~ГАЗ~~
+- Мотоциклы
+    1. ___Иж___
+    2. Урал
+    3. Ява
+```
 - Машины
     1. __Жигули__
     2. _Волга_
@@ -45,3 +54,52 @@
 ---
 ## Ссылки и картинки
 
+Для указания ссылки, пишем ее название в квадратных скобках [название] затем указываем (ссылку) в круглых скобках
+```
+[Популярный сайт контроля версий](http://www.github.com)
+```
+---
+- [Популярный сайт контроля версий](http://www.github.com)
+---
+Другой вариант указания ссылок, заключается в указании названия в квадратных скобках, затем в следующих квадратных скобках указываем метку, отдельно задаем значение для метки в виде URL
+
+```
+- [Котики][cats]
+- [Хомячки][hamsters]
+- [Собачки][dogs]
+
+[cats]: https://unsplash.com/s/photos/cats
+[hamsters]: https://unsplash.com/s/photos/hamster
+[dogs]: https://unsplash.com/s/photos/dogs
+```
+---
+- [Котики][cats]
+- [Хомячки][hamsters]
+- [Собачки][dogs]
+
+[cats]: https://unsplash.com/s/photos/cats
+[hamsters]: https://unsplash.com/s/photos/hamster
+[dogs]: https://unsplash.com/s/photos/dogs
+---
+
+Со вставкой картинки, дела обстоят походим образом, но перед квадратными скобками указывается ! 
+```
+![cats][1]
+![hamsters][2]
+![dogs][3]
+
+[1]:https://plus.unsplash.com/premium_photo-1673967831980-1d377baaded2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D "Котики"
+[2]:https://media.istockphoto.com/id/455208643/photo/hamster.webp?a=1&b=1&s=612x612&w=0&k=20&c=lCJTYQ1-jVy6ntg6ahaW3Wt9IgE-f06pYmxtoE1H5-E= "Хомячки"
+[3]:https://images.unsplash.com/photo-1568572933382-74d440642117?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D "Собачки"
+
+```
+
+![cats][1]
+![hamsters][2]
+![dogs][3]
+
+[1]:https://plus.unsplash.com/premium_photo-1673967831980-1d377baaded2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D "Котики"
+[2]:https://media.istockphoto.com/id/455208643/photo/hamster.webp?a=1&b=1&s=612x612&w=0&k=20&c=lCJTYQ1-jVy6ntg6ahaW3Wt9IgE-f06pYmxtoE1H5-E= "Хомячки"
+[3]:https://images.unsplash.com/photo-1568572933382-74d440642117?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D "Собачки"
+
+---
