@@ -1,15 +1,24 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-//import java.io.IOException;
+import java.io.IOException;
 
 public class hello {
      
-    public static void main(String[] args) throws Exception{
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) throws Exception {
         
-        System.out.print("Input your name: ");
-        String x = reader.readLine();
-      //  String x = "Sergey";
-        System.out.println("Hello "+x+"!");
     }
-}
+    
+
+    
+    public BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+    public String enterName() {
+      System.out.print("Input your name: ");
+    String x = reader.readLine();
+    return x;
+    }
+    public void helloName() {
+      System.out.println("Hello "+enterName()+"!");
+    }
+
+  }
