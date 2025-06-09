@@ -5,4 +5,6 @@
 Если все настроено верно в терминале отобразится текущая версия git.
 - Далее необходимо провести базовую настройку конфигурации git с помощью команд:  
 `git config --global user.name "your name or nik"`  
-`git config --global user.email "your email"`  
+`git config --global user.email "your email"`
+- Для установки связи через ssh с удаленым репозиторием:
+`git remote set-url origin git@github.com:accaunt_name/repositories.git`
